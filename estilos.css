@@ -1,0 +1,158 @@
+/*--GOOGLE FONTES--*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*-- BODY E ALTERAÇÕES --*/
+body {
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(234, 238, 32);
+    background-image: url(./capa2.jpg);
+   background-size: cover;
+    
+
+}
+
+.tittle {
+    color: rgb(255, 255, 255);
+}
+.container {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff5;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    
+    
+    
+
+}
+.container .form{
+    padding: 30px;
+
+}
+.container .form .tittle{
+
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+.form .tittle::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 250px;
+    background-color: rgb(234, 238, 32);
+    border-radius: 25px;
+}
+.form .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+
+}
+
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+    border-radius: 5px;
+
+}
+
+
+.input-field input:is(:focus, :valid){
+    border-bottom-color: rgb(234, 238, 32);
+
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    
+}
+
+.input-field input:is(:focus, :valid) ~ i{
+    color: rgb(234, 238, 32);
+}
+
+}
+
+.input-field i.icon{
+    left: 0;
+}
+.input-field i.ShowHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+.form .checkbox-text{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+.checkbox-content input{
+    margin: 0 8px 0 4px;
+    accent-color: rgb(234, 238, 32);
+
+}
+.form .text{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+.form a.text{
+    color: rgb(234, 238, 32);
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+.form .button{
+    margin-top: 35px;
+}
+.form .button input{
+    border: none;
+    background-color: rgb(234, 238, 32);
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.button input:hover{
+    background-color: rgb(199, 202, 32);
+}
+.form .login-signup{
+    margin-top: 30px;
+    text-align: center;
+}
